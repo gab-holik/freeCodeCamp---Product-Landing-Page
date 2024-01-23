@@ -1,0 +1,294 @@
+:root {
+  --green: #c5d212;
+  --white: #fff;
+  --shadow: #474747;
+  --background: #bebebe;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  background-image: url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header-img {
+  width: 95px;
+  padding: 5px;
+}
+#nav-bar {
+  background: #ffffffe7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+a:hover {
+  color: var(--green);
+}
+.nav-links {
+  display: flex;
+}
+.nav-link {
+  padding-right: 15px;
+}
+.nav-link:first-of-type {
+  padding-left: 10px;
+}
+.hero-heading,
+.hero-subheading,
+h2 {
+  text-transform: uppercase;
+  font-family: "Concert One", sans-serif;
+}
+.hero-heading,
+h2,
+footer,
+.how-card,
+.about,
+.sign-up {
+  text-align: center;
+}
+h3 {
+  font-weight: 600;
+}
+.hero-heading,
+.hero-subheading {
+  font-family: "Concert One", sans-serif;
+}
+.hero-heading {
+  font-size: 4em;
+  color: var(--white);
+  text-shadow: 1px 1px 5px #000;
+  padding-bottom: 0.5em;
+}
+.section-heading {
+  margin: 3em 0 2em;
+  font-size: 2em;
+}
+/*How It Works*/
+.how-it-works {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+.how-cards,
+.meal-card,
+.about,
+.about p,
+.video {
+  margin: auto;
+}
+.how-cards {
+  display: flex;
+  gap: 5em;
+}
+.how-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 200px;
+  height: 200px;
+}
+i {
+  color: var(--green);
+  font-size: 2.5em;
+}
+/*Meal Plans*/
+.meal-plans {
+  height: max-content;
+  background-color: var(--green);
+  padding: 1em 0 2em;
+}
+.plans-cards {
+  display: flex;
+  gap: 1em;
+}
+.meal-card {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  gap: 10px;
+  align-items: center;
+  text-align: justify;
+  border-radius: 15px;
+  background: var(--white);
+  box-shadow: 1px 5px 10px var(--shadow);
+}
+.sample-meal {
+  border-radius: 0 0 15px 15px;
+  width: 20em;
+}
+.meal-card p,
+.meal-card h3 {
+  padding: 10px;
+}
+.plans-h {
+  color: var(--white);
+  text-shadow: 1px 1px 3px var(--shadow);
+}
+/*About Us */
+
+.about h3 {
+  padding-bottom: 1em;
+}
+.about p {
+  width: 60%;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+.bold {
+  font-weight: 800;
+}
+.video {
+  padding-bottom: 1em;
+}
+iframe {
+  border-radius: 15px;
+  border: none;
+  height: 300px;
+  width: 500px;
+}
+.wrapper {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+}
+.background1 {
+  background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.background2 {
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.sign-up {
+  padding: 3em;
+  background: var(--background);
+}
+.sign-up h2 {
+  font-size: 2em;
+}
+.sign-up h2,
+.sign-up h3,
+form {
+  padding-top: 1.5em;
+}
+input:not(.bttn) {
+  font-size: 1.3em;
+  border: none;
+  border-radius: 5px;
+}
+.bttn {
+  color: var(--white);
+  background-color: var(--green);
+  border: 2px solid var(--white);
+  padding: 5px 20px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px var(--shadow);
+  font-weight: 800;
+}
+.bttn:hover {
+  cursor: pointer;
+  color: var(--green);
+  background: var(--white);
+  border: 2px solid var(--green);
+}
+footer {
+  background-color: var(--green);
+  padding: 10px;
+}
+
+@media (max-width: 1010px) {
+  .plans-cards {
+    flex-direction: column;
+  }
+}
+@media (max-width: 830px) {
+  .how-cards {
+    flex-direction: column;
+    gap: 1em;
+  }
+  #header {
+    background-position: 10%;
+  }
+  .background1 {
+    background-position: 50%;
+  }
+}
+@media (max-width: 700px) {
+  #nav-bar {
+    flex-direction: column;
+  }
+  #header-img {
+    width: 75px;
+  }
+  .hero-subheading {
+    background-color: #ffffff9d;
+  }
+  .background2 {
+    background-position: 50%;
+  }
+}
+@media (max-width: 500px) {
+  iframe {
+    display: none;
+  }
+  .bttn {
+    margin-top: 1em;
+  }
+  .sample-meal {
+    width: 10em;
+  }
+  .meal-card {
+    text-align: center;
+    gap: 0;
+  }
+  .meal-card h3 {
+    font-size: 1em;
+    padding-bottom: 0;
+  }
+  .nav-link {
+    font-size: 0.75em;
+  }
+  .background1 {
+    background-position: 75%;
+  }
+}
+@media (max-width: 290px) {
+  input[type="email"] {
+    font-size: 1em;
+  }
+}
+@media (max-width: 250px) {
+  input[type="email"] {
+    font-size: 0.75em;
+  }
+}
