@@ -91,7 +91,7 @@ h3 {
   padding-bottom: 0.5em;
 }
 .section-heading {
-  padding: 2em 0 1em;
+  padding: 1em 0 1em;
   font-size: 2em;
 }
 p,
@@ -103,11 +103,10 @@ h3:not(section h3) {
 .meal-plans,
 .about,
 .sign-up {
-  padding-bottom: 4em;
+  padding-bottom: 2em;
 }
 /*How It Works*/
 .how-it-works {
-  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -142,7 +141,6 @@ i {
 .plans-cards {
   display: flex;
   gap: 1em;
-  padding-top: 1em;
   color: var(--grey);
 }
 .meal-card {
@@ -202,8 +200,8 @@ iframe {
 }
 .sign-up h2 {
   font-size: 2em;
+  padding-top: 1em;
 }
-.sign-up h2,
 .sign-up h3,
 form {
   padding-top: 1.5em;
